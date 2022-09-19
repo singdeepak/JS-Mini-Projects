@@ -43,9 +43,9 @@ function runTimer() {
 
 
     // document.querySelector('#date').innerHTML = `${date}${month}-${year}`;
-    document.querySelector('#hour').innerHTML = `${hour}`;
-    document.querySelector('#minute').innerHTML = `${minute}`;
-    document.querySelector('#second').innerHTML = `${second}`;
+    document.querySelector('.hour').innerHTML = `${hour}`;
+    document.querySelector('.minute').innerHTML = `${minute}`;
+    document.querySelector('.second').innerHTML = `${second}`;
     document.querySelector('#meridiam').innerHTML = `${meridiam}`;
 }
 

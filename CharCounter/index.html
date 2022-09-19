@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        textarea {
+            resize: none;
+            height: 50vh;
+            width: 92%;
+            font-size: 16px;
+            padding: 20px 50px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .row {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .result {
+            height: 50vh;
+            color: white;
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea class="text" placeholder="Enter text here"></textarea>
+    <div class="col-sm-4 result text-white bg-dark"></div>
+
+
+    <script>
+        document.querySelector("textarea").addEventListener('input', function () {
+            let str = this.value;
+            let k = str.trim();
+            document.querySelector('.result').innerHTML = k.length;
+        });
+    </script>
+</body>
+
+</html>
